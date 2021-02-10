@@ -1,0 +1,17 @@
+{
+    "files.associations": {    
+        "Dockerfile*": "dockerfile",
+      },
+    "objectscript.conn" :{
+      "ns": "DEMO",
+      "username": "_SYSTEM",
+      "password": "SYS",
+      "active": false,
+      "docker-compose": {
+        "service": "iris",
+        "internalPort": 52773
+      }
+    },
+    "objectscript.conn.active": true,
+    "workbench.colorTheme": "InterSystems Default Dark"
+}
