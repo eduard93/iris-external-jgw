@@ -8,6 +8,10 @@ Parameter INVOCATION = "Queue";
 Method TestCall(pRequest As Ens.Request, Output pResponse As Ens.Response) As %Status
 {
     set tSC = ..Adapter.ExecuteQuery(.tResult,"select * from appevents")
+    while tResult.%Next() {
+      set row = tResult.GetRowList()
+      $$$TRACE($lts(row, " "))
+    }
     quit tSC
 }
 
